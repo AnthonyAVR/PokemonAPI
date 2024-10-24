@@ -1,0 +1,111 @@
+/* Estilos generales */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Titulo */
+h1 {
+  margin: 20px;
+  color: #ffcb05;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  border: 2px solid #3b4cca;
+  width: 250px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de la lista de Pokémon */
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Tarjetas de Pokémon */
+.pokemon-card {
+  background-color: #fff;
+  border: 2px solid #3b4cca;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Efecto hover */
+.pokemon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de las imágenes */
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+/* Nombre de los Pokémon */
+.pokemon-card h3 {
+  margin: 10px 0 0;
+  color: #333;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+/* Estilos del Modal */
+.pokemon-modal {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.pokemon-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pokemon-modal img {
+  width: 150px;
+  height: 150px;
+}
+
+.close-button {
+  background-color: #ffcb05;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.close-button:hover {
+  background-color: #f5b300;
+}
